@@ -1,0 +1,154 @@
+/* Setting variables for future use */
+
+:root {
+    --accent: #07AB80;
+    --dark: #5B636E;
+    --dark2: #8F8E98;
+    --light: #eeeeee;
+    --white: #ffffff;
+}
+
+body {
+    /* max-width: 100%; */
+    /* overflow-x: hidden; */
+}
+
+.container-fluid {
+    max-width: 100%;
+}
+
+/* AUTO FLEX STRETCH HAS BEEN ONE OF THE MOST FRUSTRATING FEATURES OF BOOTSTRAP ROWS AND COLUMNS. */
+
+.no-stretch {
+    align-items: flex-start;
+}
+
+.p {
+    margin: 0;
+}
+
+.br {
+    border-radius: 1px;
+}
+
+.bg-me-accent {
+    background-color: var(--accent);
+}
+
+.accent-text {
+    color: var(--accent);
+}
+
+.subtle-text {
+    color: #cfced6;
+}
+
+.btn-accent {
+    background-color: var(--accent);
+    color: white;
+    font-size: 90%;
+    position: absolute;
+    right: 5%;
+}
+
+#row-main-header {
+    background-color: var(--accent);
+    color: var(--white);
+}
+
+/* #region On Bg Image */
+
+#row-background-image {
+    background: transparent url('https://wallpapercave.com/wp/wp3592340.jpg') no-repeat center 70% /cover;
+    background-color: var(--dark)
+}
+
+#contact-card {
+    /* padding: */
+}
+
+#input-phone {
+    width: 55%;
+}
+
+#input-ext {
+    width: 40%;
+}
+
+#input-message {
+    height: 100px;
+}
+
+#agreement {
+    font-size: 60%;
+}
+
+#text-box-over-image {
+    background-color: var(--accent);
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, .4);
+    height: 100%;
+    width: 10px;
+}
+
+#text-over-image {
+    /* border-left: var(--accent) 10px solid; */
+    color: var(--white);
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, .4);
+    ;
+}
+
+/* #endregion */
+
+#row---3 {
+    min-height: 200px;
+}
+
+#float-sect-1 {
+    /* position: absolute; */
+    /* left: 3rem; */
+}
+
+#float-sect-2 {
+    position: absolute;
+    width: 50%;
+    /* height: 100px; */
+    /* background-color: var(--white); */
+    right: 3rem;
+    color: var(--dark);
+}
+
+#float-sect-3 {
+    background-color: var(--dark);
+    /* position: relative; */
+    /* width: 100%; */
+    height: 400px;
+}
+
+#section-4 {
+    color: var(--dark);
+}
+
+#section-5 {
+    background-color: var(--light)
+}
+
+/* My own media query because bootstrap is absolute trash */
+
+@media (max-width: 768px) {
+    #float-sect-2 {
+        position: relative;
+        width: 100%;
+        /* height: 100px; */
+        /* background-color: var(--white); */
+        right: 0rem;
+        color: var(--dark);
+    }
+    #float-sect-3 {
+        position: relative;
+        width: 100%;
+        /* height: 100px; */
+        /* background-color: var(--white); */
+        right: 0rem;
+        color: var(--dark);
+    }
+}
